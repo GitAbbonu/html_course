@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Esercizio numero 5</title>
+    <style>
+      /* label {
+        display: block;
+      } */
+      /* Proverò a farlo anche con il css, questo è solo con puro HTML, molto spartano */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Create a registration form. The form should have the following fields:
+      </h1>
+      <ul>
+        <li>-Email</li>
+        <li>-Password</li>
+        <li>-Name and Lastname</li>
+        <li>-Date of birth</li>
+        <li>-Telephone number</li>
+        <li>
+          A select for choosing plans: free plan, a group of 3 plans with
+          increasing price, and a checkbox for a Pro Plan
+        </li>
+        <li>Credit card number</li>
+        <li>CVC</li>
+        <li>Expiration date</li>
+        <li>Billing Address</li>
+      </ul>
+    </header>
+
+    <hr />
+
+    <main>
+      <fieldset>
+        <legend>Registration form</legend>
+        <form>
+          <label for="first_name">Name:</label>
+          <input name="first_name" id="first_name" type="text" />
+
+          <label for="lastname">Lastname:</label>
+          <input name="lastname" id="lastname" type="text" />
+
+          <br />
+
+          <label for="date_of_birt">Date of birth:</label>
+          <input type="date" name="date_of_birt" id="date_of_birt" />
+          <br />
+          <label for="telephone_number">Telephone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]+"
+            maxlength="11"
+            minlength="10"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <br />
+          <label for="passw"
+            >Password <abbr title="8 characters minimum">*</abbr></label
+          >
+          <input type="password" id="passw" name="passw" minlength="8" />
+
+          <br />
+
+          <ul>
+            <p>Select your plan:</p>
+            <li>
+              <input
+                type="radio"
+                name="plan"
+                id="plan_free"
+                value="plan_free"
+              />
+              <label for="plan_free">Free plan 0€</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="plan"
+                id="plan_medium"
+                value="plan_medium"
+              />
+              <label for="plan_free">Medium plan 50€</label>
+            </li>
+            <li>
+              <input type="radio" name="plan" id="plan_max" value="plan_max" />
+              <label for="plan_free">Maximum plan 100€</label>
+            </li>
+          </ul>
+
+          <label for="pro_plan">Try for a month the Pro Plan:</label>
+          <input type="checkbox" name="pro_plan" id="pro_plan" />
+          <br />
+          <br />
+
+          <h2>Credit card:</h2>
+
+          <label for="ccn">Credit Card Number:</label>
+          <input
+            id="ccn"
+            id="ccn"
+            type="tel"
+            pattern="[0-9\s]{13,19}"
+            maxlength="19"
+          />
+
+          <label for="cvc">CVC</label>
+          <input
+            name="cvc"
+            id="cvc"
+            type="tel"
+            maxlength="3"
+            pattern="[0-9]+"
+            placeholder="***"
+          />
+
+          <br />
+          <br />
+
+          <label for="expiration_date">Expiration date</label>
+          <input name="expiration_date" id="expiration_date" type="date" />
+
+          <label for="address">Billing Address</label>
+          <input name="address" id="address" type="text" />
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>
