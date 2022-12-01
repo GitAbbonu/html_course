@@ -7,7 +7,82 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML Lesson</title>
+    <title>Esercizio numero 9</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Create a HTML blog page.
+    * The page should have an article, a footer and a form.
+    * The article should have a title, a paragraph and background pictures.
+    * The form should have a mandatory email field and a submit button.
+
+    Use semantic tags as much as possible. -->
+
+    <nav>
+      <h1>Navbar</h1>
+      <menu>
+        <li>
+          <strong><a href="#home">Home</a></strong>
+        </li>
+        <li><a href="#link">Link</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </menu>
+      <form>
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </form>
+    </nav>
+
+    <header>
+      <h1>Blog Page</h1>
+    </header>
+
+    <main>
+      <fieldset>
+        <article>
+          <h2>Title 1</h2>
+          <img src="assets/laptop.png" alt="A laptop" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ut
+            velit iusto natus <mark>quos</mark>, rem sed quam, debitis dolorem
+            hic assumenda at id aliquam cum unde. At doloribus debitis eveniet?
+          </p>
+          <aside>The picture is not mine</aside>
+        </article>
+      </fieldset>
+      <fieldset>
+        <article>
+          <h2>Title 2</h2>
+          <img src="assets/hands.png" alt="hands" />
+          <details>
+            <summary>Details</summary>
+            Coding is awesome!
+          </details>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ut
+            velit iusto natus quos, rem sed quam, debitis dolorem hic assumenda
+            at id aliquam cum unde. At doloribus debitis eveniet?
+          </p>
+        </article>
+      </fieldset>
+    </main>
+
+    <hr />
+
+    <form>
+      <label for="email">Get in touch!</label>
+      <input type="email" name="email" id="email" required />
+      <button>Submit</button>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <p>Made by Me</p>
+      <p><a href="mailto:me@example.com">me@example.com</a></p>
+      <address>Via dei campi n°42</address>
+    </footer>
+  </body>
 </html>
